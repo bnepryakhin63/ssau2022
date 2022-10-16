@@ -4,7 +4,7 @@
 
 1 [Выполнение работы Matrix Multiplication](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab0_MatMul.ipynb)
 
-1.1 [Дополнительно работа](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/MatMul_cuda) выполнена на функциях ядра процесса видеокарты в формате файла .cu
+1.1 [Дополнительно работа](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/MatMul_cuda.cu) выполнена на функциях ядра процесса видеокарты в формате файла .cu
 Результаты измерений выдаются в консоли, поэтому ответы фиксировались в ручную в таблице.
 
 | Размер матрицы | CPU, мс.выполнения | GPU, мс. выполнения	| Ускорение раз	|
