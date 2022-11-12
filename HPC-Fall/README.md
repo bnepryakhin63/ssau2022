@@ -2,7 +2,7 @@
 
 Описание и ход выполнения работы доступно по ссылкам ниже:
 
-1 [Выполнение работы Matrix Multiplication](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab0_MatMul.ipynb)
+1. [Выполнение работы Matrix Multiplication](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab0_MatMul.ipynb)
 
 1.1 [Дополнительно работа](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/MatMul_cuda.cu) выполнена на функциях ядра процесса видеокарты в формате файла .cu
 Результаты измерений выдаются в консоли, поэтому ответы фиксировались в ручную в таблице.
@@ -20,3 +20,5 @@
 
 
 Тк. вычисления с матрицами размерностью более чем 200*200 на [PyTorch](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab0_MatMul.ipynb) произвести не получилось из за проблем с производительностью, сравнить данные методы проблематично.
+
+2. [Выполнение работы Lab1_VectorSum](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab1_SumVec.ipynb) Описание хода работы внутри блокнота Python
