@@ -22,3 +22,4 @@
 Тк. вычисления с матрицами размерностью более чем 200*200 на [PyTorch](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab0_MatMul.ipynb) произвести не получилось из за проблем с производительностью, сравнить данные методы проблематично.
 
 2. [Выполнение работы Lab1_VectorSum](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab1_SumVec.ipynb) Описание хода работы внутри блокнота Python
+3. [Выполнение работы Lab3_Salt_and_pepper](https://github.com/bnepryakhin63/ssau2022/tree/main/HPC-Fall/Salt_and_pepper) Описание хода работы внутри блокнота [Python](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Salt_and_pepper/Lab03_Salt_and_pepper.ipynb)
