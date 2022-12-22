@@ -23,5 +23,5 @@
 
 2. [Выполнение работы Lab1_VectorSum](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab1_SumVec.ipynb) Описание хода работы внутри блокнота Python
 3. [Выполнение работы Lab3_Salt_and_pepper](https://github.com/bnepryakhin63/ssau2022/tree/main/HPC-Fall/Salt_and_pepper) Описание хода работы внутри блокнота [Python](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Salt_and_pepper/Lab03_Salt_and_pepper.ipynb)
-4. [Выполнение работы Lab4_Mas_Search](https://github.com/bnepryakhin63/ssau2022/tree/main/HPC-Fall/Salt_and_pepper) Описание хода работы внутри блокнота [Python](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Salt_and_pepper/Lab03_Salt_and_pepper.ipynb)
+4. [Выполнение работы Lab4_Mass_Search](https://github.com/bnepryakhin63/ssau2022/tree/main/HPC-Fall/Mass_Search) Описание хода работы внутри блокнота [Python]https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Mas_Search/Lab4_Mass_search.ipynb)
 
