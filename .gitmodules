@@ -1,0 +1,3 @@
+[submodule "Big_Data/Big_Data/flink-training-exercises"]
+	path = Big_Data/Big_Data/flink-training-exercises
+	url = https://github.com/ververica/flink-training-exercises
