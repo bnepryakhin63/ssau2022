@@ -1,5 +1,5 @@
-# Big-Data
-#### Лабораторный практикум. Курс "Большие данные"
+**⚠️ This repository has been archived and is no longer being maintained. For up-to-date content, see https://github.com/ververica/flink-training. ⚠️**
 
-1. [Лабораторная работа № 1: Введение в Apache Spark](https://github.com/bnepryakhin63/ssau2022/blob/main/Big%20Data/Lab1/Lab1_Nepryakhin.ipynb)
-2. [Лабораторная 2. Формирование отчётов в Apache Spark](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab2/Lab2_Nepryakhin.ipynb)
+---
+
+This repository contains examples and exercises for Apache Flink.
