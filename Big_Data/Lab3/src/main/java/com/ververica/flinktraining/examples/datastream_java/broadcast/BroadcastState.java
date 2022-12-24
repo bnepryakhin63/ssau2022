@@ -24,11 +24,9 @@ import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.typeutils.EnumTypeInfo;
 import org.apache.flink.api.java.typeutils.ListTypeInfo;
 import org.apache.flink.api.java.typeutils.TupleTypeInfo;
-import org.apache.flink.streaming.api.datastream.BroadcastConnectedStream;
 import org.apache.flink.streaming.api.datastream.BroadcastStream;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.KeyedStream;
-import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.co.KeyedBroadcastProcessFunction;
 import org.apache.flink.util.Collector;
@@ -124,8 +122,7 @@ public class BroadcastState {
 				.setParallelism(4)
 				.broadcast(rulesStateDescriptor);
 
-		BroadcastConnectedStream<Item, Tuple2<Shape, Shape>> foo = itemColorKeyedStream.connect(broadcastRulesStream);
-		SingleOutputStreamOperator<String> output = itemColorKeyedStream
+		DataStream<String> output = itemColorKeyedStream
 				.connect(broadcastRulesStream)
 				.process(new MatchFunction());
 

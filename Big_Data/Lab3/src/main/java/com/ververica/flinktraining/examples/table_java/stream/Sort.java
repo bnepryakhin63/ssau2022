@@ -47,7 +47,7 @@ public class Sort {
 		env.setParallelism(1);
 
 		DataStream<Event> eventStream = env.addSource(new OutOfOrderEventSource())
-				.assignTimestampsAndWatermarks(new TimestampsAndWatermarks(Time.milliseconds(OUT_OF_ORDERNESS)));
+				.assignTimestampsAndWatermarks(new TimestampsAndWatermarks());
 
 		Table events = tableEnv.fromDataStream(eventStream, "eventTime.rowtime");
 		tableEnv.registerTable("events", events);
@@ -85,8 +85,8 @@ public class Sort {
 	}
 
 	private static class TimestampsAndWatermarks extends BoundedOutOfOrdernessTimestampExtractor<Event> {
-		public TimestampsAndWatermarks(Time t) {
-			super(t);
+		public TimestampsAndWatermarks() {
+			super(Time.milliseconds(OUT_OF_ORDERNESS));
 		}
 
 		@Override

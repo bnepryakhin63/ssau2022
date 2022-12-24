@@ -59,7 +59,7 @@ public class PopularPlacesTableApi {
 
 		Table popPlaces = tEnv
 				// scan TaxiRides table
-				.from("TaxiRides")
+				.scan("TaxiRides")
 				// filter for valid rides
 				.filter("isInNYC(startLon, startLat) && isInNYC(endLon, endLat)")
 				// select fields and compute grid cell of departure or arrival coordinates

@@ -22,6 +22,8 @@ import com.ververica.flinktraining.exercises.datastream_java.sources.TaxiFareSou
 import com.ververica.flinktraining.exercises.datastream_java.sources.TaxiRideSource;
 import com.ververica.flinktraining.exercises.datastream_java.utils.ExerciseBase;
 import com.ververica.flinktraining.exercises.datastream_java.utils.MissingSolutionException;
+import org.apache.flink.api.common.state.ValueState;
+import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.configuration.Configuration;
@@ -75,17 +77,44 @@ public class RidesAndFaresExercise extends ExerciseBase {
 
 	public static class EnrichmentFunction extends RichCoFlatMapFunction<TaxiRide, TaxiFare, Tuple2<TaxiRide, TaxiFare>> {
 
+		private ValueState<TaxiRide> taxiRideState;
+		private ValueState<TaxiFare> taxiFareState;
+
 		@Override
 		public void open(Configuration config) throws Exception {
-			throw new MissingSolutionException();
+			ValueStateDescriptor<TaxiRide> taxiRideDescriptor = new ValueStateDescriptor<TaxiRide>(
+					"persistedTaxiRide",
+					TaxiRide.class
+			);
+			ValueStateDescriptor<TaxiFare> taxiFareDescriptor = new ValueStateDescriptor<TaxiFare>(
+					"persistedTaxiFare",
+					TaxiFare.class
+			);
+
+			taxiRideState = getRuntimeContext().getState(taxiRideDescriptor);
+			taxiFareState = getRuntimeContext().getState(taxiFareDescriptor);
 		}
 
 		@Override
 		public void flatMap1(TaxiRide ride, Collector<Tuple2<TaxiRide, TaxiFare>> out) throws Exception {
+			TaxiFare fare = taxiFareState.value();
+			if (fare != null) {
+				taxiFareState.clear();
+				out.collect(new Tuple2<>(ride, fare));
+			} else {
+				taxiRideState.update(ride);
+			}
 		}
 
 		@Override
 		public void flatMap2(TaxiFare fare, Collector<Tuple2<TaxiRide, TaxiFare>> out) throws Exception {
+			TaxiRide ride = taxiRideState.value();
+			if (ride != null) {
+				taxiRideState.clear();
+				out.collect(new Tuple2<>(ride, fare));
+			} else {
+				taxiFareState.update(fare);
+			}
 		}
 	}
 }

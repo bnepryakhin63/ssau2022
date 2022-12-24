@@ -21,7 +21,6 @@ import com.ververica.flinktraining.exercises.datastream_java.sources.TaxiFareSou
 import com.ververica.flinktraining.exercises.datastream_java.utils.ExerciseBase;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.api.java.utils.ParameterTool;
-import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -53,26 +52,31 @@ public class HourlyTipsSolution extends ExerciseBase {
 		final int servingSpeedFactor = 600; // events of 10 minutes are served in 1 second
 
 		// set up streaming execution environment
-		Configuration conf = new Configuration();
-		StreamExecutionEnvironment env = StreamExecutionEnvironment.createLocalEnvironmentWithWebUI(conf);
+		StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 		env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
 		env.setParallelism(ExerciseBase.parallelism);
 
 		// start the data generator
-		DataStream<TaxiFare> fares = env.addSource(fareSourceOrTest(new TaxiFareSource(input, maxEventDelay, servingSpeedFactor))).name("testname");
+		DataStream<TaxiFare> fares = env.addSource(fareSourceOrTest(new TaxiFareSource(input, maxEventDelay, servingSpeedFactor)));
 
 		// compute tips per hour for each driver
-		fares
+		DataStream<Tuple3<Long, Long, Float>> hourlyTips = fares
 				.keyBy((TaxiFare fare) -> fare.driverId)
 				.timeWindow(Time.hours(1))
-				.process(new AddTips())
+				.process(new AddTips());
+
+		DataStream<Tuple3<Long, Long, Float>> hourlyMax = hourlyTips
 				.timeWindowAll(Time.hours(1))
-				.maxBy(2)
-				.print();
+				.maxBy(2);
 
-//		printOrTest(hourlyMax);
+//		You should explore how this alternative behaves. In what ways is the same as,
+//		and different from, the solution above (using a timeWindowAll)?
 
-		System.out.println(env.getExecutionPlan());
+// 		DataStream<Tuple3<Long, Long, Float>> hourlyMax = hourlyTips
+// 			.keyBy(0)
+// 			.maxBy(2);
+
+		printOrTest(hourlyMax);
 
 		// execute the transformation pipeline
 		env.execute("Hourly Tips (java)");
