@@ -12,19 +12,19 @@ ExpiringStateExercise
 ### Описание
 Задание выполнено на Scala
 
-Для каждого задания проведен тест. [Результаты теста здесь>>](https://github.com/bnepryakhin63/ssau2022/tree/main/Big_Data/Lab3/Test_result)
+Для каждого задания проведен тест. [Результаты теста здесь>>](https://github.com/bnepryakhin63/ssau2022/tree/main/Big_Data/Lab3/Test_result)<p>
 
-RideCleanisingExercise
-![RideCleanisingExercise](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab3/Test_result/image/RidesCleansing.png?raw=true)
+RideCleanisingExercise<p>
+![RideCleanisingExercise](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab3/Test_result/image/RidesCleansing.png?raw=true)<p>
 
-RidesAndFaresExercise
-![RidesAndFaresExercise](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab3/Test_result/image/RidesAndFares.png?raw=true)
+RidesAndFaresExercise<p>
+![RidesAndFaresExercise](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab3/Test_result/image/RidesAndFares.png?raw=true)<p>
 
-HourlyTipsExerxise
-![HourlyTipsExerxise](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab3/Test_result/image/HourlyTips.png?raw=true)
+HourlyTipsExerxise<p>
+![HourlyTipsExerxise](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab3/Test_result/image/HourlyTips.png?raw=true)<p>
 
-ExpiringStateExercise
-![ExpiringStateExercise](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab3/Test_result/image/ExpiringState.png?raw=true)
+ExpiringStateExercise<p>
+![ExpiringStateExercise](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab3/Test_result/image/ExpiringState.png?raw=true)<p>
 
 **⚠️ This repository has been archived and is no longer being maintained. For up-to-date content, see https://github.com/ververica/flink-training. ⚠️**
 
