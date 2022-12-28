@@ -9,9 +9,9 @@
 Запустить и проверить работу приложения.<p>
 ### Описание
 
-Знакоство с ZooKeeper выполнено в файле ![Знакомство с Zoo.ipynb](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab4/Знакомство%20с%20Zoo.ipynb) через jupyter.<p>
-Знакоство с распределёнными приложениями выполнено в файле  ![Голосования.ipynb](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab4/Голосования.ipynb) через jupyter.<p>
-Знакоство с логированием выполнено в файле ![Философы.ipynb.ipynb](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab4/Философы.ipynb) через jupyter.<p>
+Знакоство с ZooKeeper выполнено в файле [Знакомство с Zoo.ipynb](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab4/Знакомство%20с%20Zoo.ipynb) через jupyter.<p>
+Знакоство с распределёнными приложениями выполнено в файле [Голосования.ipynb](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab4/Голосования.ipynb) через jupyter.<p>
+Знакоство с логированием выполнено в файле [Философы.ipynb.ipynb](https://github.com/bnepryakhin63/ssau2022/blob/main/Big_Data/Lab4/Философы.ipynb) через jupyter.<p>
 
 Логи предварительного запуска:
 #./bin/zkCli.sh -server localhost:2181<p>
