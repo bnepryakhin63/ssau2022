@@ -1,0 +1,27 @@
+
+
+CREATE TABLE ORDEDS(
+    Id INT PRIMARY KEY,
+    Zakaz varchar(225) NOT NULL,
+    Count INT,
+    Price INT
+);
+
+CREATE TABLE USERS (
+    Id INT PRIMARY KEY,
+    Name varchar(40) NOT NULL,
+    Login varchar(40) NOT NULL,
+    Password varchar(200) NOT NULL
+);
+
+
+INSERT INTO ORDEDS VALUES
+(1, 'Order1', 95, 7000,112 ),
+(2, 'Order2', 31, 357,113),
+(3, 'Order3', 105, 812,112),
+(4, 'Order4', 58, 8,114);
+
+INSERT INTO USERS VALUES
+(112, 'Ivan', 'Ivan123'	,'Parol123'	),
+(113, 'Fedor', 'ONIX'	, 'Pa45321'	),
+(114, 'Uriy' , 'Yura1988','N5oName123');
