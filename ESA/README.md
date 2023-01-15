@@ -35,6 +35,8 @@ Create a script to make a database for your model.
 Develop data layer as Java Beans for the model and make them prepared for use with Entity Persistence.
 
 Созданы бины и сервелеты для работы приложения
+
+
 ![image](https://user-images.githubusercontent.com/53073280/212570693-74e030b8-29a3-47ef-8fea-ff671a0c3893.png)
 
 ##### Task 5
@@ -44,10 +46,12 @@ Implement business layer for accessing data using session beans.
 Implement view layer using any technology of your choice, which is applicable here.
 
 Реализовано предаставление:
+
 ![Главная](https://user-images.githubusercontent.com/53073280/212570644-e263e92d-2155-4422-a35b-28d58ef96cf5.png)
 ![Добавление покупателя](https://user-images.githubusercontent.com/53073280/212570660-f5468830-464c-4f32-9a7e-2d6a273975e4.png)
 
 Покупатели и заказы удаляются при нажатии
+
 ![Списки заказов](https://user-images.githubusercontent.com/53073280/212570668-8c396bc5-85da-4321-b381-86bcc30f419c.png)
 ![Списки покупателей](https://user-images.githubusercontent.com/53073280/212570672-9b36fc2d-7ce8-4971-a094-57f0cbaabff5.png)
 
