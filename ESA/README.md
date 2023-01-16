@@ -20,7 +20,7 @@
 If you have no DBMS installed, please install one. You can choose any SQL DBMS you like, but PostgreSQL and MySQL are preferred.
 
 Создал базу данных в неё добавил таблицы со связями
-[Код запроса:](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/MatMul_cuda.cu) 
+[Код запроса:](https://github.com/bnepryakhin63/ssau2022/blob/main/ESA/JavaEE_Lab1_Orders/MysqSQL.txt) 
 
 ##### Task 3
 Choose any subject area and make a model with at least two entities with a few properties.
@@ -34,7 +34,8 @@ Create a script to make a database for your model.
 ##### Task 4
 Develop data layer as Java Beans for the model and make them prepared for use with Entity Persistence.
 
-Созданы бины и сервелеты для работы приложения
+[Созданы бины и сервелеты для работы приложения](https://github.com/bnepryakhin63/ssau2022/tree/main/ESA/JavaEE_Lab1_Orders/src/main/webapp) 
+
 
 
 ![image](https://user-images.githubusercontent.com/53073280/212570693-74e030b8-29a3-47ef-8fea-ff671a0c3893.png)
