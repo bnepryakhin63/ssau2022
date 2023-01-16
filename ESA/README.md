@@ -34,7 +34,7 @@ Create a script to make a database for your model.
 ##### Task 4
 Develop data layer as Java Beans for the model and make them prepared for use with Entity Persistence.
 
-[Созданы бины и сервелеты для работы приложения](https://github.com/bnepryakhin63/ssau2022/tree/main/ESA/JavaEE_Lab1_Orders/src/main/java/com/example) 
+[Созданы бины и сервлеты для работы приложения](https://github.com/bnepryakhin63/ssau2022/tree/main/ESA/JavaEE_Lab1_Orders/src/main/java/com/example) 
 
 
 
