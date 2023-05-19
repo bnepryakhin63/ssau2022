@@ -20,14 +20,14 @@
 
 ![Исходное изображение](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab1/images/img.png)
 
-Изображение, получаемое сервером:
+Изображение, получаемое сервером и зашумленное:
 
-![Искаженное изображение](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab1/images/server_img.png)
+![Искаженное изображение](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab1/images/img_output.png)
 
 
 Изображение, очищаемое сервером:
 
-![Очищенное изображение](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab1/images/img_output.png)
+![Очищенное изображение](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab1/images/server_img.png)
 
 
 ## Оенка потери при передачи от клиента к серверу
