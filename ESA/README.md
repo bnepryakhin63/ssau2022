@@ -4,7 +4,7 @@
 
 Описание и ход выполнения работы доступно по ссылкам ниже:
 
-[Выполнение работы #1](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/Lab0_MatMul.ipynb)
+[Выполнение работы #1](https://github.com/bnepryakhin63/ssau2022/tree/main/ESA/JavaEE_Lab1_Orders)
 
 ##### Task 1
 - Download GlassFish application server.
@@ -18,7 +18,7 @@
 If you have no DBMS installed, please install one. You can choose any SQL DBMS you like, but PostgreSQL and MySQL are preferred.
 
 Создал базу данных в неё добавил таблицы со связями
-[Код запроса:](https://github.com/bnepryakhin63/ssau2022/blob/main/HPC-Fall/MatMul_cuda.cu) 
+[Код запроса:](https://github.com/bnepryakhin63/ssau2022/blob/main/ESA/JavaEE_Lab1_Orders/MysqSQL.txt) 
 
 ##### Task 3
 Choose any subject area and make a model with at least two entities with a few properties.
