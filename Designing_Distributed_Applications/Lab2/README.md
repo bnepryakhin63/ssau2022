@@ -17,6 +17,7 @@
 
 Реализация функции:
 a. Поиск по идентификатору
+
 ```python
     def find_successor(self, node_id: int):
         """Поиск successor по id."""
@@ -32,14 +33,17 @@ a. Поиск по идентификатору
         return node
 ```
 b. Добавление узла
+
 ![Добавление узла](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab2/img/add1.png)
 
 ![Добавление узла](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab2/img/add2.png)
 
 c. Удаление узла
+
 ![Удаление узла](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab2/img/del.png)
 
 d. Стабилизация системы (доп.)
+
 ```python
    def stabilize(self) -> None:
         """Стабилизация системы."""
