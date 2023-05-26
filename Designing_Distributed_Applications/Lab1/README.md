@@ -4,7 +4,7 @@
 
 ## Основные технологии:
 
-* __Язык__: Python 3.6
+* __Язык__: Python 3.9
 * __Библиотеки__: numpy, matplotlib, PIL, socket
 
 ## Описание основных модулей программы
@@ -29,7 +29,7 @@
 ![Очищенное изображение](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab1/images/server_img.png)
 
 
-## Оенка потери при передачи от клиента к серверу
+## Оценка потери при передачи от клиента к серверу
 
 Размер исходного и выходного изображения:
 ![Очищенное изображение](https://github.com/bnepryakhin63/ssau2022/blob/main/Designing_Distributed_Applications/Lab1/tmp/resurs.png)
